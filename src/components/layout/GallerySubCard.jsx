@@ -15,7 +15,7 @@ function GallerySubCard({ data }) {
     </div>
   );
 }
-
+//testing purposes
 // GallerySubCard.defaultProps = {
 //   data: {
 //     image: "https://api.lorem.space/image/shoes?w=400&h=225",

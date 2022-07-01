@@ -15,10 +15,10 @@ function GalleryDirectory() {
           <GallerySubCard data={senior} />
         </div>
         <div>
-          <GallerySubCard data={baby} />
+          <GallerySubCard data={family} />
         </div>
         <div>
-          <GallerySubCard data={family} />
+          <GallerySubCard data={baby} />
         </div>
       </div>
     </>
