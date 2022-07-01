@@ -11,11 +11,11 @@ function Contact() {
           <li></li>
         </ol>
       </div>
-      <div className="flex flex-col ml-auto  ">
-        <div className=" bg-primary form-control ">
+      <div className="flex ml-auto rounded-xl gap-8">
+        <div className=" bg-primary form-control rounded-l-xl">
           <input className="textarea w-96 h-64"></input>
         </div>
-        <div className="bg-primary w-64 h-96">
+        <div className="bg-primary w-64 h-96 rounded-r-xl">
           <h2>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Temporibus, repellendus magnam sit nobis ducimus corporis vel rem
