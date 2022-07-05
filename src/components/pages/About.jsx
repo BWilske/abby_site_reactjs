@@ -2,8 +2,8 @@ import abby from "../../assets/images/about/abby.jpg";
 
 function About() {
   return (
-    <div className="w-400 h-300 bg-primary flex items-center justify-center  mx-48 rounded-lg">
-      <div className="">
+    <div className="w-400 h-300 bg-red-50 flex items-center justify-center  mx-64 rounded-lg">
+      <div className="px-16">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
         aspernatur, esse vero inventore harum exercitationem? Autem quia nisi
         fugiat, aliquam laborum amet sint cupiditate quam labore. Dignissimos

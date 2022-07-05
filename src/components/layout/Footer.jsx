@@ -2,8 +2,8 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className=" mt-8 py-4 w-auto bg-base-200 rounded-t-sm shadow-inner flex justify-center items-center   ">
-      <h2 className="text-center md:text-2xl text-center ml-auto ">
+    <div className=" mt-8 py-4 w-auto bg-red-50 rounded-t-sm shadow-inner flex justify-center items-center   ">
+      <h2 className="text-center md:text-2xl ml-auto ">
         &copy; 2022 Hearts Window Photography
       </h2>
 

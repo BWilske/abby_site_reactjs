@@ -4,7 +4,7 @@ import { Link, Router } from "react-router-dom";
 function Header() {
   return (
     <>
-      <header className="bg-base-200 shadow-xl  font-sans md:flex md:items-center ">
+      <header className="bg-red-50 shadow-xl  font-sans md:flex md:items-center ">
         <div className=" m-auto flex">
           <Link to="/">
             <h1 className=" m-auto text-3xl text-center py-8">
@@ -20,20 +20,20 @@ function Header() {
         </div>
         <Link
           to="/gallery_directory"
-          className="  xl:w-64  w-40 btn-lg btn-primary  ml-auto rounded-lg hidden md:flex items-center justify-center "
+          className="  xl:w-64  w-40 btn-lg btn-primary bg-emerald-800 ml-auto rounded-lg hidden md:flex items-center justify-center "
         >
           Work
         </Link>
 
         <Link
           to="/about"
-          className=" xl:w-64  w-40 btn-lg btn-primary text-lg ml-8  rounded-lg hidden md:flex items-center justify-center"
+          className=" xl:w-64  w-40 btn-lg btn-primary bg-emerald-800 text-lg ml-8  rounded-lg hidden md:flex items-center justify-center"
         >
           About
         </Link>
         <Link
           to="/contact"
-          className=" shadow-md  xl:w-64 w-40 btn-lg btn-primary text-lg ml-8 mr-8 rounded-lg hidden md:flex items-center justify-center  "
+          className=" shadow-md  xl:w-64 w-40 btn-lg btn-primary bg-emerald-800 text-lg ml-8 mr-8 rounded-lg hidden md:flex items-center justify-center  "
         >
           Contact
         </Link>
