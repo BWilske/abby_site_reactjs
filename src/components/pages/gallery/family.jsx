@@ -1,7 +1,7 @@
 import React from "react";
 
-function family() {
+function Family() {
   return <div>family</div>;
 }
 
-export default family;
+export default Family;

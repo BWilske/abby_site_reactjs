@@ -6,9 +6,11 @@ function Header() {
     <>
       <header className="bg-base-200 shadow-xl  font-sans md:flex md:items-center ">
         <div className=" m-auto flex">
-          <h1 className=" m-auto text-3xl text-center py-8">
-            Hearts Window Photgraphy
-          </h1>
+          <Link to="/">
+            <h1 className=" m-auto text-3xl text-center py-8">
+              Hearts Window Photgraphy
+            </h1>
+          </Link>
 
           <div className="space-y-2 md:hidden p-2 ml-auto ">
             <span className="block w-8 h-0.5 bg-gray-600"></span>

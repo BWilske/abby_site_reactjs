@@ -1,7 +1,7 @@
 import React from "react";
 
-function wedding() {
+function Wedding() {
   return <div>wedding</div>;
 }
 
-export default wedding;
+export default Wedding;

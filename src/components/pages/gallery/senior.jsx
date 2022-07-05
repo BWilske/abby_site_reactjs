@@ -1,7 +1,7 @@
 import React from "react";
 
-function senior() {
+function Senior() {
   return <div>senior</div>;
 }
 
-export default senior;
+export default Senior;

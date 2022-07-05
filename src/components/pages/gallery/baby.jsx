@@ -1,7 +1,7 @@
 import React from "react";
 
-function baby() {
+function Baby() {
   return <div>baby</div>;
 }
 
-export default baby;
+export default Baby;
