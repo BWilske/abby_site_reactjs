@@ -1,5 +1,3 @@
-import React from "react";
-
 function GallerySubCard({ data }) {
   const { image, title } = data;
 

@@ -1,13 +1,13 @@
 import React from "react";
-import { Link, Router } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <>
-      <header className="bg-red-50 shadow-xl  font-sans md:flex md:items-center ">
+      <header className="bg-opacity-100 bg-red-100 shadow-xl  font-sans md:flex md:items-center ">
         <div className=" m-auto flex">
           <Link to="/">
-            <h1 className=" m-auto text-3xl text-center py-8">
+            <h1 className=" m-auto text-6xl text-center py-8 font-typewriter">
               Hearts Window Photgraphy
             </h1>
           </Link>

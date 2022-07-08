@@ -2,7 +2,7 @@ import abby from "../../assets/images/about/abby.jpg";
 
 function About() {
   return (
-    <div className="w-400 h-300 bg-red-50 flex items-center justify-center  mx-64 rounded-lg">
+    <div className="w-400 h-300 bg-red-100  flex items-center justify-center  mx-64 rounded-lg">
       <div className="px-16">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
         aspernatur, esse vero inventore harum exercitationem? Autem quia nisi
@@ -16,7 +16,7 @@ function About() {
         vel provident itaque dignissimos, iusto modi dolore ipsum neque dolorem
         ipsam sequi nam illo in cumque ad.
       </div>
-      <img src={abby} alt="photo of photographer" className="rounded-r-lg" />
+      <img src={abby} alt="photographer" className="rounded-r-lg" />
     </div>
   );
 }

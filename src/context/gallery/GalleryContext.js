@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext } from "react";
 import family from "../../assets/images/gallerydir/family15.jpg";
 
 const GalleryContext = createContext();
