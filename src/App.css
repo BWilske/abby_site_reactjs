@@ -6,6 +6,6 @@
   @font-face {
     font-family: "typewriter";
     font-weight: 700;
-    src: url("../public/fonts/ErikaOrmig.ttf");
+    src: url("../public/fonts/ErikaOrmig.ttf") format("truetype");
   }
 }
