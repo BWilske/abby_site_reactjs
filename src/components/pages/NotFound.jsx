@@ -1,5 +1,3 @@
-lines (26 sloc)  1.38 KB
-
 import React from "react";
 import { Link } from "react-router-dom";
 
