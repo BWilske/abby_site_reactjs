@@ -20,22 +20,18 @@ function App() {
         <Router>
           <div className="min-w-min flex flex-col h-screen justify-between h-100vh w-100vw bg-red-50">
             <Header />
-            <div className="main-wrapper bg-red-50 justify-between flex ">
-              <Routes>
-                <Route path="/" exact element={<Main />} />
-                <Route path="/about" element={<About />} />
-                <Route
-                  path="/gallery_directory"
-                  element={<GalleryDirectory />}
-                />
-                <Route path="*" element={<NotFound />} />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="/gallery/wedding" element={<Wedding />}></Route>
-                <Route path="/gallery/senior" element={<Senior />}></Route>
-                <Route path="/gallery/baby" element={<Baby />}></Route>
-                <Route path="/gallery/family" element={<Family />}></Route>
-              </Routes>
-            </div>
+
+            <Routes>
+              <Route path="/" exact element={<Main />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/gallery_directory" element={<GalleryDirectory />} />
+              <Route path="*" element={<NotFound />} />
+              <Route path="/gallery/wedding" element={<Wedding />}></Route>
+              <Route path="/gallery/senior" element={<Senior />}></Route>
+              <Route path="/gallery/baby" element={<Baby />}></Route>
+              <Route path="/gallery/family" element={<Family />}></Route>
+            </Routes>
             <Footer />
           </div>
         </Router>

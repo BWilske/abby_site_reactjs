@@ -6,8 +6,10 @@ function GalleryComponent({ photoData }) {
     return <GalleryCard data={data} key={id}></GalleryCard>;
   };
   return (
-    <div className="my-8 mx-auto border-1 border-gray-300 grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-      {photoData.map((data) => renderCard(data))}
+    <div className="w-auto min-h-100vh bg-primary flex justify-center z-100 ">
+      <div className=" my-8 grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        {photoData.map((data) => renderCard(data))}
+      </div>
     </div>
   );
 }
