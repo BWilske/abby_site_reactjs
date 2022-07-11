@@ -2,7 +2,7 @@ import abby from "../../assets/images/about/abby.jpg";
 
 function About() {
   return (
-    <div className="min-w-400 min-h-300 bg-red-100 ring-2 ring-slate-300 flex items-center justify-center  xl:mx-64 lg:mx-32 md:mx-8  lg:flex-row flex-col rounded-lg ">
+    <div className="min-w-400 min-h-300 bg-red-100 ring-2 ring-slate-300 items-center justify-center  xl:mx-64 lg:mx-32 md:mx-8 grid grid-col-2 rounded-lg ">
       <article className="py-8 px-16 font-typewriter ">
         <h1 className="text-2xl mb-8">
           {" "}

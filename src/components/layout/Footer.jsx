@@ -4,11 +4,11 @@ import { IgLogo, FbLogo } from "../../assets/svg";
 function Footer() {
   return (
     <div className=" py-2 w-auto bg-opacity-100 bg-red-100 rounded-t-sm flex justify-center items-center border-t-2 border-zinc-400 border-opacity-80">
-      <h2 className="text-center md:text-2xl ml-auto ">
+      <h2 className="text-center md:text-2xl m-auto ">
         &copy; 2022 Hearts Window Photography
       </h2>
 
-      <div className="gap-6 flex ml-auto">
+      <div className="grid grid-cols-2 ml-auto">
         <a href="https://www.facebook.com/heartswindowphotography">
           <FbLogo width="36"></FbLogo>
         </a>
