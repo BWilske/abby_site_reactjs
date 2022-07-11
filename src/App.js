@@ -18,7 +18,7 @@ function App() {
     <div className="App">
       <GalleryProvider>
         <Router>
-          <div className="min-w-min flex flex-col h-screen justify-between h-100vh w-100vw bg-red-50">
+          <div className="min-w-min flex flex-col min-h-screen justify-between h-100vh w-100vw bg-red-50">
             <Header />
 
             <Routes>

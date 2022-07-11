@@ -32,7 +32,7 @@ function Header() {
           </div>
 
           {menuOpen && (
-            <div className=" py-4 w-full absolute top-0 right-0 bg-primary min-h-fit flex flex-col gap-4 items-center z-10 text-5xl lg:hidden">
+            <div className=" py-4 w-full absolute top-0 right-0 bg-primary min-h-fit flex flex-col space-y-4 items-center z-10 text-5xl lg:hidden">
               <MobileHeaderLink
                 data={{ target: "/gallery_directory", title: "Work" }}
               ></MobileHeaderLink>
