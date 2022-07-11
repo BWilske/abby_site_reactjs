@@ -3,7 +3,7 @@ import { IgLogo, FbLogo } from "../../assets/svg";
 
 function Footer() {
   return (
-    <div className=" py-4 w-auto bg-opacity-100 bg-red-100 rounded-t-sm flex justify-center items-center border-t-2 border-zinc-200">
+    <div className=" py-2 w-auto bg-opacity-100 bg-red-100 rounded-t-sm flex justify-center items-center border-t-2 border-zinc-400 border-opacity-80">
       <h2 className="text-center md:text-2xl ml-auto ">
         &copy; 2022 Hearts Window Photography
       </h2>

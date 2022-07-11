@@ -1,22 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import HeaderLink from "./HeaderLink";
+import MobileHeaderLink from "./MobileHeaderLink";
 import { useState } from "react";
 
 function Header() {
   const [menuOpen, setmenuOpen] = useState(false);
   return (
     <>
-      <header className="bg-opacity-100 bg-red-100 shadow-xl  flex items-center font-typewriter z-10 border-y-2 border-zinc-400 ">
-        <div className=" m-auto flex">
+      <header className="bg-opacity-100 bg-red-100 shadow-xl  flex justify-between font-typewriter z-10 border-y-2 border-zinc-400 border-opacity-80  lg:px-16  ">
+        <div className="flex m-auto lg:m-0">
           <Link to="/">
-            <h1 className=" m-auto xl:text-5xl lg:text-4xl text-3xl  text-center py-8">
+            <h1 className="xl:text-5xl md:text-4xl text-2xl py-6 ">
               Hearts Window Photgraphy
             </h1>
           </Link>
 
           <div
-            className="space-y-2 md:hidden block p-2 ml-auto z-20 "
+            className=" absolute top-1 right-1 space-y-2 z-20 lg:hidden md:top-1 md:right-1 ring-2 rounded-sm ring-slate-800 p-1"
             onClick={() => {
               if (menuOpen) {
                 setmenuOpen(false);
@@ -25,26 +26,27 @@ function Header() {
               }
             }}
           >
-            <span className="block w-8 h-0.5 bg-gray-600"></span>
-            <span className="block w-8 h-0.5 bg-gray-600"></span>
-            <span className="block w-5 h-0.5 bg-gray-600"></span>
+            <span className="block w-6 h-0.5 bg-slate-900 px-2"></span>
+            <span className="block w-6 h-0.5 bg-slate-900 px-2"></span>
+            <span className="block w-6 h-0.5 bg-slate-900 px-2"></span>
           </div>
 
           {menuOpen && (
-            <div className=" py-12 min-w-full bg-emerald-100 min-h-96 flex flex-col md:hidden gap-12 items-center fixed z-10 text-3xl">
-              <HeaderLink
+            <div className=" py-4 w-full absolute top-0 right-0 bg-primary min-h-fit flex flex-col gap-4 items-center z-10 text-5xl lg:hidden">
+              <MobileHeaderLink
                 data={{ target: "/gallery_directory", title: "Work" }}
-              ></HeaderLink>
-              <HeaderLink
+              ></MobileHeaderLink>
+
+              <MobileHeaderLink
                 data={{ target: "/about", title: "About" }}
-              ></HeaderLink>
-              <HeaderLink
+              ></MobileHeaderLink>
+              <MobileHeaderLink
                 data={{ target: "/contact", title: "Contact" }}
-              ></HeaderLink>
+              ></MobileHeaderLink>
             </div>
           )}
         </div>
-        <div className="hidden md:flex lg:gap-16 md:gap-8 xl:mr-16 lg:mr-12 md:mr-8 mr-0">
+        <div className="hidden lg:flex xl:gap-12  lg:gap-8  mr-0">
           <HeaderLink
             data={{ target: "/gallery_directory", title: "Work" }}
           ></HeaderLink>

@@ -1,81 +1,50 @@
 import React from "react";
 import { FbLogo, IgLogo, EmailLogo } from "../../assets/svg";
+import ContactForm from "../layout/ContactForm";
+import camera from "../../assets/images/contact/camera.jpg";
 
 function Contact() {
   return (
-    <div className="flex gap-16 items-center justify-center">
-      <div className="bg-primary min-w-fit justify-center items-center flex flex-col rounded-lg shadow-2xl ring-2 ring-slate-300">
+    <div className="flex items-center justify-center px-16 lg:flex-row flex-col gap-x-32 gap-y-16 py-16 ">
+      <div className="bg-primary min-w-2xl max-w-4xl justify-center items-center flex md:flex-col rounded-lg shadow-2xl ring-2 ring-slate-600 gap-12 gap-x-24 p-12 font-typewriter text-3xl">
         <a href="https://www.facebook.com/heartswindowphotography">
-          <div className="flex my-8 justify-center items-center gap-4 px-16">
+          <div className="flex justify-center items-center gap-4 ">
             <span>
               <FbLogo width="36"></FbLogo>
             </span>
-            <p className="font-typewriter text-3xl ">Facebook</p>
+            <p className=" hidden md:block">Facebook</p>
           </div>
         </a>
         <a href="https://www.instagram.com/hearts_window_photography/">
-          <div className="flex my-8 justify-center items-center gap-4 px-16">
+          <div className="flex justify-center items-center gap-4">
             <span>
               <IgLogo width="36"></IgLogo>
             </span>
-            <p className="font-typewriter text-3xl">Instagram</p>
+            <p className=" hidden md:block">Instagram</p>
           </div>
         </a>
         <a href="mailto:heartswindowphotographer@gmail.com">
-          <div className="flex my-8 justify-center items-center gap-4 px-16">
+          <div className="flex justify-center items-center gap-4 ">
             <span>
               <EmailLogo width="36"></EmailLogo>
             </span>
-            <p className="font-typewriter text-3xl">Email</p>
+            <p className="hidden md:block">Email</p>
           </div>
         </a>
       </div>
-      <form
-        className="flex flex-col form-control p-16 bg-primary gap-8"
-        name="contact"
-        method="POST"
-        data-netlify="true"
-      >
-        <input
-          type="text"
-          placeholder="First Name"
-          className="input input-bordered w-full max-w-xs"
-          name="First"
-        />
-        <input
-          type="text"
-          placeholder="Last Name"
-          className="input input-bordered w-full max-w-xs"
-          name="Last"
-        />
-        <input
-          type="email"
-          placeholder="Email"
-          className="input input-bordered w-full max-w-xs"
-          name="Email"
-        />
-        <input
-          type="text"
-          placeholder="Phone Number"
-          className="input input-bordered w-full max-w-xs"
-          name="Phone"
-        />
-        <select
-          className="select select-bordered w-full max-w-xs"
-          name="Photo_Type"
-        >
-          <option disabled selected>
-            Type of Photography
-          </option>
-          <option>Wedding</option>
-          <option>Senior</option>
-          <option>Family</option>
-          <option>Baby</option>
-          <option>Other</option>
-        </select>
-
-        <button className="btn btn-lg bg-zinc-300 text-black">Send</button>
-      </form>
+      {/* <div className="flex flex-col flex-1 w-auto my-8 gap-y-8 ">
+        <div className="bg-slate-200  mr-auto px-48 py-24 ring-2 ring-slate-600 rounded-xl">
+        test
+        </div>
+        <div className="bg-slate-200  ml-auto px-48 py-24 ring-2 ring-slate-600 rounded-xl">
+        test
+        </div>
+        <div className="bg-slate-200  mr-auto px-48 py-24 ring-2 ring-slate-600 rounded-xl">
+        test
+        </div>
+      </div> */}
+      {/* <img src={camera} alt="" className="opacity-80 ring-slate-600 ring-2 " /> */}
+      <ContactForm></ContactForm>
     </div>
   );
 }

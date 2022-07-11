@@ -2,8 +2,8 @@ import abby from "../../assets/images/about/abby.jpg";
 
 function About() {
   return (
-    <div className="min-w-400 min-h-300 bg-red-100 flex items-center justify-center  xl:mx-64 lg:mx-32 md:mx-8  md:flex-row flex-col rounded-lg ">
-      <article className="py-8 px-16 font-typewriter">
+    <div className="min-w-400 min-h-300 bg-red-100 ring-2 ring-slate-300 flex items-center justify-center  xl:mx-64 lg:mx-32 md:mx-8  lg:flex-row flex-col rounded-lg ">
+      <article className="py-8 px-16 font-typewriter ">
         <h1 className="text-2xl mb-8">
           {" "}
           A small town photographer helping families capture memories.
@@ -16,8 +16,8 @@ function About() {
           fun.
         </p>
         <p className="mb-8">
-          When it was time for me to start looking for collages, I wanted to
-          find a program where my love of photography and people could flourish.
+          When it was time to start looking for colleges, I wanted to find a
+          program where my love of photography and people could flourish.
           Central Washington University allowe me to challenge myself and push
           the limits of my photography. Graduateding in the fall of 2017 with a
           degree in Fine Art, ive continued to strive to capture the same
@@ -29,7 +29,7 @@ function About() {
       <img
         src={abby}
         alt="photographer"
-        className="md:rounded-lg md:mb-0 mb-8"
+        className="md:rounded-lg lg:mb-0 mb-8"
       />
     </div>
   );

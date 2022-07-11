@@ -6,7 +6,7 @@ function HeaderLink({ data }) {
   return (
     <Link
       to={target}
-      className=" xl:text-4xl lg:text-3xl md:text-lg text-4xl md:flex items-center justify-center"
+      className=" flex xl:text-4xl lg:text-3xl text-4xl items-center justify-center px-auto"
     >
       {title}
     </Link>
