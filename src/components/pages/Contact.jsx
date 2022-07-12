@@ -5,8 +5,8 @@ import camera from "../../assets/images/contact/camera.jpg";
 
 function Contact() {
   return (
-    <div className="flex items-center justify-center px-16 lg:flex-row flex-col gap-x-32 py-16 ">
-      <div className="bg-primary min-w-2xl max-w-4xl justify-center items-center flex md:flex-col rounded-lg shadow-2xl ring-2 ring-slate-600 gap-12 p-12 font-typewriter text-3xl lg:mb-0 mb-16">
+    <div className="grid  grid-rows-2 lg:grid-cols-2 px-16 gap-x-32 py-16 place-content-center ">
+      <div className="bg-primary min-w-2xl max-w-4xl  max-h-fit justify-center items-center flex md:flex-col rounded-lg shadow-2xl ring-2 ring-slate-600 gap-12 p-12 font-typewriter text-3xl lg:mb-0 mb-16">
         <a href="https://www.facebook.com/heartswindowphotography">
           <div className="flex justify-center items-center gap-4 ">
             <span>
