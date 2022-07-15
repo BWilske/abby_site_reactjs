@@ -1,49 +1,36 @@
 import React from "react";
 import { FbLogo, IgLogo, EmailLogo } from "../../assets/svg";
 import ContactForm from "../layout/ContactForm";
-import camera from "../../assets/images/contact/camera.jpg";
 
 function Contact() {
   return (
-    <div className="grid  grid-rows-2 lg:grid-cols-2 px-16 gap-x-32 py-16 place-content-center ">
-      <div className="bg-primary min-w-2xl max-w-4xl  max-h-fit justify-center items-center flex md:flex-col rounded-lg shadow-2xl ring-2 ring-slate-600 gap-12 p-12 font-typewriter text-3xl lg:mb-0 mb-16">
+    <div className=" flex justify-center flex-col items-center p-12 lg:flex-row ">
+      <div className=" flex justify-center items-center bg-primary min-h-fit gap-12 p-12 mb-12 font-typewriter text-3xl ring-2 ring-slate-600 rounded-lg shadow-2xl lg:mr-16 lg:mb-0 md:flex-col ">
         <a href="https://www.facebook.com/heartswindowphotography">
-          <div className="flex justify-center items-center gap-4 ">
+          <div className="flex justify-center items-center ">
             <span>
               <FbLogo width="36"></FbLogo>
             </span>
-            <p className=" hidden md:block">Facebook</p>
+            <p className="hidden md:block ml-4">Facebook</p>
           </div>
         </a>
         <a href="https://www.instagram.com/hearts_window_photography/">
-          <div className="flex justify-center items-center gap-4">
+          <div className="flex justify-center items-center ">
             <span>
               <IgLogo width="36"></IgLogo>
             </span>
-            <p className=" hidden md:block">Instagram</p>
+            <p className=" hidden md:block ml-4">Instagram</p>
           </div>
         </a>
         <a href="mailto:heartswindowphotographer@gmail.com">
-          <div className="flex justify-center items-center gap-4 ">
+          <div className="flex justify-center items-center  ">
             <span>
               <EmailLogo width="36"></EmailLogo>
             </span>
-            <p className="hidden md:block">Email</p>
+            <p className="hidden md:block ml-4">Email</p>
           </div>
         </a>
       </div>
-      {/* <div className="flex flex-col flex-1 w-auto my-8 gap-y-8 ">
-        <div className="bg-slate-200  mr-auto px-48 py-24 ring-2 ring-slate-600 rounded-xl">
-        test
-        </div>
-        <div className="bg-slate-200  ml-auto px-48 py-24 ring-2 ring-slate-600 rounded-xl">
-        test
-        </div>
-        <div className="bg-slate-200  mr-auto px-48 py-24 ring-2 ring-slate-600 rounded-xl">
-        test
-        </div>
-      </div> */}
-      {/* <img src={camera} alt="" className="opacity-80 ring-slate-600 ring-2 " /> */}
       <ContactForm></ContactForm>
     </div>
   );

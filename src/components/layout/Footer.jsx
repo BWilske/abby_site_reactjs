@@ -8,7 +8,7 @@ function Footer() {
         &copy; 2022 Hearts Window Photography
       </h2>
 
-      <div className="grid grid-cols-2 ml-auto">
+      <div className="grid grid-cols-2 relative">
         <a href="https://www.facebook.com/heartswindowphotography">
           <FbLogo width="36"></FbLogo>
         </a>

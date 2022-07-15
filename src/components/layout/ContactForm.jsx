@@ -4,9 +4,8 @@ import { useState } from "react";
 function ContactForm() {
   const [successMessage, setSuccessMessage] = useState(null);
 
-  const handleSubmit = async (event, setSuccessMessage) => {
-    event.preventDefault();
-    const formElements = [...event.currentTarget.elements];
+  const handleSubmit = async (e, setSuccessMessage) => {
+    const formElements = [...e.currentTarget.elements];
 
     const filledOutElements = formElements
       //this is the only part i dont understand, need to research
@@ -26,18 +25,18 @@ function ContactForm() {
       body: filledOutElements,
     })
       .then(() => {
-        setSuccessMessage("Successfully submitted!");
+        setSuccessMessage("Sucessfully submitted!");
       })
       .catch((_) => {
         setSuccessMessage(
-          "There was an error with your submission, please try agin or email me diretly using the link to the left"
+          "There was an error with your submission, please try again or email me directly using the link to the left"
         );
       });
   };
 
   return (
     <form
-      className="flex flex-col form-control p-8 max-w-4xl min-w-2xl bg-primary gap-4 rounded-lg shadow-2xl ring-2 ring-slate-600 text-2xl font-typewriter"
+      className="flex flex-col form-control p-8 min-w-full bg-primary gap-4 rounded-lg shadow-2xl ring-2 ring-slate-600 text-2xl font-typewriter lg:min-w-0"
       name="contact"
       method="POST"
       action="/contact"
@@ -122,7 +121,9 @@ function ContactForm() {
       >
         Send
       </button>
-      {successMessage && <p className="font-typewriter">{successMessage}</p>}
+      {successMessage && (
+        <p className="font-typewriter text-center">{successMessage}</p>
+      )}
     </form>
   );
 }
