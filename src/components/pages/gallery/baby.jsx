@@ -1,74 +1,10 @@
 import React from "react";
 import GalleryComponent from "../../layout/GalleryComponent";
 
+import images from "../../../assets/images/gallery/baby/babyBarrel";
+
 function Baby() {
-  let testData = [
-    {
-      photo: "https://api.lorem.space/image/shoes?w=400&h=225",
-      alt: "item",
-    },
-    {
-      photo: "https://api.lorem.space/image/shoes?w=400&h=225",
-      alt: "item",
-    },
-    {
-      photo: "https://api.lorem.space/image/shoes?w=400&h=225",
-      alt: "item",
-    },
-    {
-      photo: "https://api.lorem.space/image/shoes?w=400&h=225",
-      alt: "item",
-    },
-    {
-      photo: "https://api.lorem.space/image/shoes?w=400&h=225",
-      alt: "item",
-    },
-    {
-      photo: "https://api.lorem.space/image/shoes?w=400&h=225",
-      alt: "item",
-    },
-    {
-      photo: "https://api.lorem.space/image/shoes?w=400&h=225",
-      alt: "item",
-    },
-    {
-      photo: "https://api.lorem.space/image/shoes?w=400&h=225",
-      alt: "item",
-    },
-    {
-      photo: "https://api.lorem.space/image/shoes?w=400&h=225",
-      alt: "item",
-    },
-    {
-      photo: "https://api.lorem.space/image/shoes?w=400&h=225",
-      alt: "item",
-    },
-    {
-      photo: "https://api.lorem.space/image/shoes?w=400&h=225",
-      alt: "item",
-    },
-    {
-      photo: "https://api.lorem.space/image/shoes?w=400&h=225",
-      alt: "item",
-    },
-    {
-      photo: "https://api.lorem.space/image/shoes?w=400&h=225",
-      alt: "item",
-    },
-    {
-      photo: "https://api.lorem.space/image/shoes?w=400&h=225",
-      alt: "item",
-    },
-    {
-      photo: "https://api.lorem.space/image/shoes?w=400&h=225",
-      alt: "item",
-    },
-    {
-      photo: "https://api.lorem.space/image/shoes?w=400&h=225",
-      alt: "item",
-    },
-  ];
-  return <GalleryComponent photoData={testData}></GalleryComponent>;
+  return <GalleryComponent photoData={images}></GalleryComponent>;
 }
 
 export default Baby;

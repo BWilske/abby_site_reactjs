@@ -6,7 +6,7 @@ function MobileHeaderLink({ data }) {
   return (
     <Link
       to={target}
-      className=" flex xl:text-4xl lg:text-3xl text-4xl items-center justify-center min-w-full py-8"
+      className=" flex items-center justify-center min-w-full py-4 border-y-2 border-slate-400 border-opacity-20 text-4xl "
       //    border-y-2 border-black
     >
       {title}

@@ -6,7 +6,7 @@ function Lightbox() {
   const { toggleLightbox, lightboxImage } = useContext(LightboxContext);
   return (
     <div
-      className="ring-4 ring-slate-400 bg-primary fixed inset-0 m-auto h-fit lg:w-1/2  md:w-3/4 w-11/12 "
+      className=" w-fit  border-4 border-slate-400 fixed inset-0 m-auto h-fit z-20"
       onClick={() => toggleLightbox()}
     >
       {lightboxImage}{" "}

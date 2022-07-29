@@ -11,37 +11,31 @@ import Senior from "./components/pages/gallery/Senior";
 import Wedding from "./components/pages/gallery/Wedding";
 import Contact from "./components/pages/Contact";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { GalleryProvider } from "./context/gallery/GalleryContext";
 import { LightboxProvider } from "./context/gallery/LightboxContext";
 
 function App() {
   return (
     <div className="App">
-      <GalleryProvider>
-        <LightboxProvider>
-          <Router>
-            <div className="min-w-min flex flex-col min-h-screen justify-between h-100vh w-100vw bg-red-50">
-              <Header />
+      <LightboxProvider>
+        <Router>
+          <div className="min-w-min flex flex-col min-h-screen justify-between h-100vh w-100vw bg-red-50">
+            <Header />
 
-              <Routes>
-                <Route path="/" exact element={<Main />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/contact" element={<Contact />} />
-                <Route
-                  path="/gallery_directory"
-                  element={<GalleryDirectory />}
-                />
-                <Route path="*" element={<NotFound />} />
-                <Route path="/gallery/wedding" element={<Wedding />}></Route>
-                <Route path="/gallery/senior" element={<Senior />}></Route>
-                <Route path="/gallery/baby" element={<Baby />}></Route>
-                <Route path="/gallery/family" element={<Family />}></Route>
-              </Routes>
-              <Footer />
-            </div>
-          </Router>
-        </LightboxProvider>
-      </GalleryProvider>
+            <Routes>
+              <Route path="/" exact element={<Main />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/gallery_directory" element={<GalleryDirectory />} />
+              <Route path="*" element={<NotFound />} />
+              <Route path="/gallery/wedding" element={<Wedding />}></Route>
+              <Route path="/gallery/senior" element={<Senior />}></Route>
+              <Route path="/gallery/baby" element={<Baby />}></Route>
+              <Route path="/gallery/family" element={<Family />}></Route>
+            </Routes>
+            <Footer />
+          </div>
+        </Router>
+      </LightboxProvider>
     </div>
   );
 }

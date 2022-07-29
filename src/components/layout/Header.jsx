@@ -8,6 +8,7 @@ function Header() {
   const [menuOpen, setmenuOpen] = useState(false);
   return (
     <>
+      {/* main title/link to home */}
       <header className="bg-red-100 shadow-xl  flex justify-between font-typewriter z-10 border-y-2 border-zinc-400 border-opacity-80  lg:px-16  ">
         <div className="flex m-auto lg:m-0">
           <Link to="/">
@@ -15,7 +16,7 @@ function Header() {
               Hearts Window Photgraphy
             </h1>
           </Link>
-
+          {/* hamburger */}
           <div
             className=" overflow-hidden absolute top-1 right-1 space-y-2 z-20 lg:hidden ring-2 rounded-sm ring-slate-800 p-1"
             onClick={() => {
@@ -30,9 +31,9 @@ function Header() {
             <span className="block w-6 h-0.5 bg-slate-900 px-2"></span>
             <span className="block w-6 h-0.5 bg-slate-900 px-2"></span>
           </div>
-
+          {/* menu for hamburger */}
           {menuOpen && (
-            <div className=" py-4 min-w-full absolute top-0 right-0 bg-primary min-h-fit flex flex-col space-y-4 items-center z-10 text-5xl lg:hidden">
+            <div className="  min-w-full absolute top-0 right-0 bg-primary min-h-fit flex flex-col items-center z-10 text-5xl lg:hidden">
               <MobileHeaderLink
                 data={{ target: "/gallery_directory", title: "Work" }}
               ></MobileHeaderLink>
@@ -46,7 +47,9 @@ function Header() {
             </div>
           )}
         </div>
-        <div className="hidden lg:flex xl:gap-12  lg:gap-8  mr-0">
+
+        {/* links for larger screens */}
+        <div className="hidden lg:flex xl:gap-4  lg:gap-2  mr-0">
           <HeaderLink
             data={{ target: "/gallery_directory", title: "Work" }}
           ></HeaderLink>

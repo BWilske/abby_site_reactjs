@@ -1,4 +1,4 @@
-import abby from "../../assets/images/about/abby.jpg";
+import abby from "../../assets/images/misc/about/abby.jpg";
 
 function About() {
   return (

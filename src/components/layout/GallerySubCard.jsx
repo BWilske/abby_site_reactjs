@@ -4,7 +4,7 @@ function GallerySubCard({ data }) {
   return (
     <div className="m-auto w-96 bg-base-100 shadow-xl rounded-sm ">
       <div className="photo">
-        <img src={image} alt={title} className="photo h-64 w-96" />
+        <img src={image} alt={title} className="photo " />
       </div>
 
       <div className="card-body">
@@ -13,12 +13,5 @@ function GallerySubCard({ data }) {
     </div>
   );
 }
-//testing purposes
-// GallerySubCard.defaultProps = {
-//   data: {
-//     image: "https://api.lorem.space/image/shoes?w=400&h=225",
-//     title: "weddings",
-//   },
-// };
 
 export default GallerySubCard;
