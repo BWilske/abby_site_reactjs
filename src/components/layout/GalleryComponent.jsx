@@ -13,7 +13,7 @@ function GalleryComponent({ photoData }) {
   return (
     <>
       {lightboxOpen ? <Lightbox /> : null}
-      <div className=" bg-red-50 flex justify-center items-center px-8 z-10  ">
+      <div className=" bg-red-50 flex justify-center items-center px-8 z-5  ">
         <div className=" my-8 grid place-items-center gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {photoData.map((data) => renderCard(data))}
         </div>

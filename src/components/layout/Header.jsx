@@ -8,11 +8,11 @@ function Header() {
   const [menuOpen, setmenuOpen] = useState(false);
   return (
     <>
-      {/* main title/link to home */}
-      <header className="bg-red-100 shadow-xl  flex justify-between font-typewriter z-10 border-y-2 border-zinc-400 border-opacity-80  lg:px-16  ">
+      <header className="bg-red-100 shadow-xl  flex justify-between font-typewriter z-10 border-y-2 border-zinc-400 border-opacity-80  lg:px-16 ">
         <div className="flex m-auto lg:m-0">
+          {/* main title/link to home */}
           <Link to="/">
-            <h1 className="xl:text-5xl md:text-4xl text-2xl py-6 ">
+            <h1 className="xl:text-5xl md:text-4xl text-2xl py-6 hover:text-slate-600">
               Hearts Window Photgraphy
             </h1>
           </Link>
@@ -33,7 +33,12 @@ function Header() {
           </div>
           {/* menu for hamburger */}
           {menuOpen && (
-            <div className="  min-w-full absolute top-0 right-0 bg-primary min-h-fit flex flex-col items-center z-10 text-5xl lg:hidden">
+            <div
+              className="  min-w-full absolute top-0 right-0 bg-primary min-h-fit flex flex-col items-center z-10 text-5xl lg:hidden"
+              onClick={() => {
+                setmenuOpen(false);
+              }}
+            >
               <MobileHeaderLink
                 data={{ target: "/gallery_directory", title: "Work" }}
               ></MobileHeaderLink>

@@ -1,14 +1,25 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useEffect } from "react";
 
 const LightboxContext = createContext();
 
 export const LightboxProvider = ({ children }) => {
-  const [lightboxOpen, setLightboxOpen] = useState(null);
+  const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxImage, setLightboxImage] = useState(null);
 
   const setImage = (src, alt) => {
     setLightboxImage(<img src={src} alt={alt} width="800" />);
   };
+
+  useEffect(() => {
+    if (lightboxOpen) {
+      window.addEventListener("click", () => setLightboxOpen(false), true);
+
+      return () => {
+        window.removeEventListener("click", () => setLightboxOpen(false), true);
+      };
+    }
+  }, [lightboxOpen]);
+
   const toggleLightbox = () =>
     lightboxOpen ? setLightboxOpen(false) : setLightboxOpen(true);
 

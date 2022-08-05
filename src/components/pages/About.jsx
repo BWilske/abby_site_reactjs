@@ -19,7 +19,7 @@ function About() {
           When it was time to start looking for colleges, I wanted to find a
           program where my love of photography and people could flourish.
           Central Washington University allowe me to challenge myself and push
-          the limits of my photography. Graduateding in the fall of 2017 with a
+          the limits of my photography. Graduating in the fall of 2017 with a
           degree in Fine Art, ive continued to strive to capture the same
           emotions I saw looking through that old film camera all of those years
           ago.

@@ -4,7 +4,11 @@ function AlternateContactLinks() {
   return (
     <div className=" flex justify-center items-center bg-primary min-h-fit gap-12 p-12 mb-12 font-typewriter text-3xl ring-2 ring-slate-600 rounded-lg shadow-2xl lg:mr-16 lg:mb-0 md:flex-col ">
       <a href="https://www.facebook.com/heartswindowphotography">
-        <div className="flex justify-center items-center ">
+        <div
+          className="flex justify-center items-center hover:text-slate-600 hover:fill-slate-800"
+          target="_blank"
+          rel="noreferrer"
+        >
           <span>
             <FbLogo width="36"></FbLogo>
           </span>
@@ -12,7 +16,11 @@ function AlternateContactLinks() {
         </div>
       </a>
       <a href="https://www.instagram.com/hearts_window_photography/">
-        <div className="flex justify-center items-center ">
+        <div
+          className="flex justify-center items-center hover:text-slate-600 hover:fill-slate-800"
+          target="_blank"
+          rel="noreferrer"
+        >
           <span>
             <IgLogo width="36"></IgLogo>
           </span>
@@ -20,7 +28,7 @@ function AlternateContactLinks() {
         </div>
       </a>
       <a href="mailto:heartswindowphotographer@gmail.com">
-        <div className="flex justify-center items-center  ">
+        <div className="flex justify-center items-center hover:text-slate-600 hover:fill-slate-800">
           <span>
             <EmailLogo width="36"></EmailLogo>
           </span>

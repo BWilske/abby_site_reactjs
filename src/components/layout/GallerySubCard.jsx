@@ -4,7 +4,13 @@ function GallerySubCard({ data }) {
   return (
     <div className="m-auto w-96 bg-base-100 shadow-xl rounded-sm ">
       <div className="photo">
-        <img src={image} alt={title} className="photo " />
+        <img
+          src={image}
+          alt={title}
+          className="photo"
+          width="384"
+          height="216"
+        />
       </div>
 
       <div className="card-body">

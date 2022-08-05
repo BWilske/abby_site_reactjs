@@ -9,12 +9,19 @@ function Footer() {
       </h2>
 
       <div className="grid grid-cols-2 relative">
-        <a href="https://www.facebook.com/heartswindowphotography">
+        <a
+          href="https://www.facebook.com/heartswindowphotography"
+          className="hover:fill-slate-800"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FbLogo width="36"></FbLogo>
         </a>
         <a
           href="https://www.instagram.com/hearts_window_photography/"
-          className="mr-8"
+          className="mr-8 hover:fill-slate-800"
+          target="_blank"
+          rel="noreferrer"
         >
           <IgLogo width="36"></IgLogo>
         </a>
